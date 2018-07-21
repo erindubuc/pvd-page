@@ -1,16 +1,44 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <title>PVD</title> 
+      <title>PVD</title>
+      <link rel="shortcut icon" href="http://www.providenceri.gov/wp-content/uploads/2016/01/square-p-01-copy.png">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anongitymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
-
-    
+     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <style>
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .dropdown content {
+            position: absolute;
+            
+        }
+        .btn dropdown-toggle:hover {
+         background-color: #ddd;
+                
+        }
+
+         .dropdown:hover .dropdown-menu {
+             position: absolute;
+             display: block;
+             
+         }
+
+        .dropdown:hover .dropdown-item {
+            background-color: white;
+            
+        }
+            
+        </style>
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="font-family: 'Montserrat', sans-serif;">
             <div class="container">
                 <div class="col-sm">
                     <p class="navbar-text" style="color: orange; margin: 0; text-align: center;">CITY OF PROVIDENCE</p>
@@ -23,25 +51,57 @@
                 </div>
             </div>    
         </nav>
-        <nav class="nav nav-fill bg-grey">
-            <a class="nav-item nav-link" href="#">CITY HALL</a>
-            <a class="nav-item nav-link" href="#">DOING BUSINESS</a>
-            <a class="nav-item nav-link" href="#">EVENTS</a>
-            <a class="nav-item nav-link" href="#">NEWS</a>
-            <a class="nav-item nav-link" href="#">PVD 311</a>
-            <a class="nav-item nav-link" href="#">EXPLORE</a>
-        </nav>
+        
+        <nav class="nav nav-fill bg-grey" style="font-family: 'Montserrat', sans-serif;">
+       
+            <div class="dropdown">
+              <a class="btn dropdown-toggle" style="margin-left: 4em;" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            CITY HALL</a>
+
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="http://www.providenceri.gov/i-want-to/">I Want to...</a>
+                <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="http://www.providenceri.gov/mayors-office/">Mayor's Office</a>
+                <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="http://www.providenceri.gov/departments/">Departments</a>
+                <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="http://council.providenceri.com/">City Council</a>
+                <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="https://library.municode.com/ri/providence/codes/code_of_ordinances">Code of Ordinances</a>
+      </div>
+</div>
+            
+            <div class="dropdown">
+             <a class="btn dropdown-toggle" style="width: 100%; margin-left: 6em;" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            DOING BUSINESS</a>
+
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="http://www.providenceeconomicdevelopment.net/business-portal/index.php">Starting a Business</a>
+                <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="http://www.providenceri.gov/inspection-standards/">Construction</a>
+                <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="http://www.providenceri.gov/board-of-licenses/">Running a Business</a>
+                <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="http://www.providenceri.gov/ethics/">Ethics</a>
+      </div>
+</div>
+    <a class="nav-item nav-link" style="margin-left: 4em;" href="#">EVENTS</a>
+    <a class="nav-item nav-link" href="#">NEWS</a>
+    <a class="nav-item nav-link" href="#">PVD 311</a>
+    <a class="nav-item nav-link" href="#">EXPLORE</a>
+    </nav>
+    </div>
         <section class="home-hero" style="background-image: url(http://bit.ly/pvdskylines); height:300px; background-size: cover; background-position-x: 50%; background-position-y: center;">
         </section>
         <div class = "container">
             <div class ="row" style="margin-top: 25px;">
                 <div class="col-sm">
-                  <h4 style="text-align: center;">What Can We Help You With?</h4>  
-                  <button type="button" class="btn btn-lg" style="width: 100%; background-color: orange; border: none; border-radius: none;">I WANT TO...</button>
-                <div class="card" style="background-color: #005d73; color: white;">
+                  <h4 style="text-align: center; font-family: 'Montserrat', sans-serif;">What Can We Help You With?</h4>  
+                  <button type="button" class="btn btn-lg" style="width: 100%; background-color: orange; border: none; border-radius: none; margin-bottom: 1em;">I WANT TO...</button>
+                <div class="card" style="background-color: #005d73; color: white; margin-top: 10px;">
                     <div class="card-body">
                         <h5 class="card-title" style="text-align: center;">Top Requests</h5>
-                        <p class="card-text" style="color: white">
+                        <p class="card-text" style="color: white; font-family: 'Montserrat', sans-serif; padding: .5em;">
                             <a href="http://www.providenceri.gov/collector/online-tax-payment-system/" target="_blank" style="text-decoration: none; color:white;">Pay Taxes</a><br/>
                             <a href="http://www.providenceri.gov/snow-ready/snow-ready-faq/" target="_blank" style="text-decoration: none; color:white;">Snow Ready</a><br/>
                             <a href="https://wmq.etimspayments.com/pbw/include/providence/input.jsp" target="_blank" style="text-decoration: none; color: white;">Pay my Parking Ticket</a><br/>
